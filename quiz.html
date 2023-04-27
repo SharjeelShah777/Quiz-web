@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./css-file/style.css">
+</head>
+
+<body>
+     <div id="main1" class="wrapper">
+         <div class="welcom">
+             <form class="start" name="start" onsubmit="submitForm(event)">
+                 <!-- <input id = "input" type="text" name="name" placeholder="Enter your name"> -->
+                 <button>Start Quiz</button>
+             </form>
+         </div>
+     </div>
+
+
+     <div id="main2" class="wrapper hide">
+        <div class="questions">
+            <div class="question-header">
+                <div class="quiz-user">
+                    <h4>Welcome! <span id="name"></span></h4>
+                </div>
+                <div class="quiz-timer">
+                    <span id="min">0</span>
+            <span>:</span>
+            <span id="sec">0</span>
+                </div>
+            </div>
+            <div class="question-body">
+                <div id="quiz-question">
+             
+                </div>
+                <button class="next-btn" onclick="next()">Next</button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="main3" class="wrapper hide">
+        <div>
+            <i class="fas fa-award"></i>
+            <h3 class="user-name">Well done! <span id="user-name"></span></h3>
+            <h class="user-points">Your Points: <span id="point"></span></h>
+            <p class = "user-time">Time Taken: <span id="time-taken"></span></p>
+        </div>
+    </div>
+    <div id="main4" class="wrapper hide">
+        <div>
+            <i class="fas fa-frown"></i>
+            <h3 class="user-name">Oops! <span id="user-name2"></span></h3>
+            <p class="user-points">Your Points: <span id="point2"></span></p>
+            <p class = "user-time">Time Taken: <span id="time-taken2"></span></p>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/d56261bbb9.js"></script>
+    <script src="./js-file/quiz.js"></script>
+</body>

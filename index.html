@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./css-file/in.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
+    <script src="./js-file/quiz.js"></script>
+  </head>
+  <body>
+    <div class="form">
+      <!-- Email  -->
+      <div class="email">
+        <!-- <label for="email">Email</label> -->
+        <input class="lb im"
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="Email"
+        />
+      </div>
+      <!-- passWord -->
+      <div class="pass">
+        <!-- <label for="password">Password</label> -->
+        <input class="lb mi"
+          type="password"
+          name="password"
+          required
+          id="password"
+          placeholder="Password"
+        />
+      </div>
+
+      <!-- Sign Up button -->
+      <button id="submit-btn" onclick="signUp()">Sign Up</button>
+      <!-- Sign In optioSn -->
+      <p id="ac">Already have an account ?</p>
+      <span ><a href="signIn.html" id="lk">Sign In</a></span>
+    </div>
+
+    <script src="./js-file/main.js"></script>
+  </body>
+</html>
